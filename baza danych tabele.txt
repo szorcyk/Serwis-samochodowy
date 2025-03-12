@@ -1,0 +1,11 @@
+baza warsztat
+tabele:
+
+
+-usługi:
+ - nazwa usługi, rodzaj usługi, opis, cena
+
+
+-historia
+-mechanicy
+-klienci
