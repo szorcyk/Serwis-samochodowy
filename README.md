@@ -1,2 +1,2 @@
 Serwis or something
-im not an expert restaurants
+im not an expert at restaurants
