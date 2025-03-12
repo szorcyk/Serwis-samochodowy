@@ -9,3 +9,5 @@ tabele:
 -historia
 -mechanicy
 -klienci
+
+Test VSC--GitHub_Desktop--GtihubRepository zakończony sukcesem
