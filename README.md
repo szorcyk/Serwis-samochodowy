@@ -4,6 +4,7 @@ mozecie komentowac
 
 
 Adam Mickiewicz - Oda do młodości
+
 Bez serc, bez ducha, — to szkieletów ludy!
 Młodości! dodaj mi skrzydła!
 Niech nad martwym wzlecę światem
