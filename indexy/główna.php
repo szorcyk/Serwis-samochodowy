@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="reklama"></section>
     <header>
         <h1>Mega serwis</h1>
         <p>Mały opis</p>
