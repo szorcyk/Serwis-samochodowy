@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script src="main.js"></script>
     <header>
     <div class="header">
     <a href="#default">TURBOFIX</a>
@@ -18,10 +19,47 @@
         </div>
       </div> 
       <div class="header2">
-<!-- TUTAJ TRZEBA TO ZDJECIE NA BANER-->
-        <h1>TURBOFIX AUTO SERWIS</h1>
-        <h3>TWOJE AUTO,NASZA PASJA!</h3>
-      </div>   
+<!-- TUTAJ TRZEBA TO ZDJECIE NA BANER-->  
+  <div style="
+    position: relative;
+    background-image: url('main.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 96,5%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: left;
+    padding-left: 50px;
+    margin-bottom:0px;
+    
+">
+    <!-- Nakładka przezroczysta -->
+    <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 900px;
+        background-color:rgba(53, 30, 16, 0.5); /* Brązowy kolor z przezroczystością */
+        z-index: 1;
+       
+    "></div>
+
+    <!-- Tekst na obrazku -->
+    <div style="position: relative; z-index: 2;">
+        <h1 style="margin: 0;">TURBOFIX<br>AUTO SERWIS</h1>
+        <h3 style="font-size: 30px; margin: 5px;">TWOJE AUTO, NASZA PASJA!</h3>  
+    </div>
+
+</div>
+
+</div>   
     </header>
     <section class="main">
         <p>W TurboFix Auto Serwis dbamy o Twoje auto jak o własne! Oferujemy kompleksowe naprawy
@@ -29,8 +67,31 @@
         nasze priorytety. Od przeglądów po skomplikowane naprawy – z nami Twój samochód jest w
         najlepszych rękach!</p>
     </section>
-    <section class="slider">
+    
       <!-- TUTAJ BEDZUIE TEN SLIDER O DOSTEPNYMI PRZEZ NAS OFERTAMI-->
+  <div class="slider-container">
+    <div class="slider">
+        <div class="slide" style="background-image: url('olej.jpg');">
+            <h2>WYMIANA OLEJU I FILTRÓW</h2>
+            <p>olej silnikowy, filtr oleju, paliwa, powietrza i kabinowy</p>
+            <button>SPRAWDŹ</button>
+        </div>
+        <div class="slide" style="background-image: url('klimatyzacja.jpg');">
+            <h2>KLIMATYZACJA</h2>
+            <p>napełnianie, odgrzybianie, diagnostyka i naprawa układu klimatyzacji</p>
+            <button>SPRAWDŹ</button>
+        </div>
+        <div class="slide" style="background-image: url('opony.jpeg');">
+            <h2>WYMIANA OPON</h2>
+            <p>montaż, demontaż, wyważanie kół, geometria zawieszenia</p>
+            <button>SPRAWDŹ</button>
+        </div>
+    </div>
+    <button class="prev">&#60;</button>
+    <button class="next">&#62;</button>
+</div>
+
+      
 
     </section>
     <section class="kontakt">
