@@ -168,3 +168,40 @@
           padding: 7px;
           margin: auto;
         }
+
+        .bloczek{
+          padding-top: 40px;
+          padding-bottom: 40px;
+          text-align: center;
+          color: white;
+          background-color: #351E10;
+        }
+        .tabela{
+          background-color: #351E10;
+          color: white;
+          text-align: center;
+          border-color: white;
+          border-style: solid;
+        }
+        table{
+          margin-left: 10%;
+          margin-right: 10%;
+          width: 80%;
+          align-self: center;
+          border-color: white;
+          border-style: solid;
+          border-width: 2px;
+          border-collapse: collapse;
+        }
+        tr {
+          font-size: medium;
+          border-color: white;
+          border-style: solid;
+          border-width: 2px;
+        }
+        td{
+          font-size: small;
+          border-color: white;
+          border-style: solid;
+          border-width: 2px;
+        }
