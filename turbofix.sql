@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 19, 2025 at 03:25 PM
+-- Generation Time: Mar 19, 2025 at 03:49 PM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -45,18 +45,22 @@ CREATE TABLE `historia_napraw` (
 CREATE TABLE `klienci` (
   `id_klienta` int(11) NOT NULL,
   `imie` text NOT NULL,
-  `nazwisko` text NOT NULL
+  `nazwisko` text NOT NULL,
+  `login` varchar(20) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `numer_telefonu` varchar(15) DEFAULT NULL,
+  `email` varchar(40) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
 -- Dumping data for table `klienci`
 --
 
-INSERT INTO `klienci` (`id_klienta`, `imie`, `nazwisko`) VALUES
-(1, 'Adam', 'Mickiewicz'),
-(2, 'Andrzej', 'Kmicic'),
-(3, 'Jan', 'Kazimierz'),
-(4, 'Janusz', 'Radziwiłł');
+INSERT INTO `klienci` (`id_klienta`, `imie`, `nazwisko`, `login`, `password`, `numer_telefonu`, `email`) VALUES
+(1, 'Adam', 'Mickiewicz', NULL, NULL, NULL, NULL),
+(2, 'Andrzej', 'Kmicic', NULL, NULL, NULL, NULL),
+(3, 'Jan', 'Kazimierz', NULL, NULL, NULL, NULL),
+(4, 'Janusz', 'Radziwiłł', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -68,15 +72,16 @@ CREATE TABLE `mechanicy` (
   `id_mechanika` int(11) NOT NULL,
   `imie` text NOT NULL,
   `nazwisko` text NOT NULL,
-  `rodzaj_uslug` text NOT NULL
+  `rodzaj_uslug` text NOT NULL,
+  `password` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
 -- Dumping data for table `mechanicy`
 --
 
-INSERT INTO `mechanicy` (`id_mechanika`, `imie`, `nazwisko`, `rodzaj_uslug`) VALUES
-(1, 'Jan', 'Sobieski', 'Naprawa układów hamulcowych.\r\nNaprawa zawieszenia i układu kierowniczego.\r\nSerwis układu wydechowego.\r\nWymiana i wyważanie opon.');
+INSERT INTO `mechanicy` (`id_mechanika`, `imie`, `nazwisko`, `rodzaj_uslug`, `password`) VALUES
+(1, 'Jan', 'Sobieski', 'Naprawa układów hamulcowych.\r\nNaprawa zawieszenia i układu kierowniczego.\r\nSerwis układu wydechowego.\r\nWymiana i wyważanie opon.', NULL);
 
 -- --------------------------------------------------------
 
