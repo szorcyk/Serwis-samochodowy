@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 19, 2025 at 01:24 PM
+-- Generation Time: Mar 19, 2025 at 01:52 PM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -80,17 +80,6 @@ INSERT INTO `mechanicy` (`id_mechanika`, `imie`, `nazwisko`, `rodzaj_uslug`) VAL
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `rodzaje_uslug`
---
-
-CREATE TABLE `rodzaje_uslug` (
-  `id_uslugi` int(11) NOT NULL,
-  `rodzaj_uslugi` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
-
--- --------------------------------------------------------
-
---
 -- Struktura tabeli dla tabeli `uslugi`
 --
 
@@ -133,12 +122,6 @@ ALTER TABLE `mechanicy`
   ADD PRIMARY KEY (`id_mechanika`);
 
 --
--- Indeksy dla tabeli `rodzaje_uslug`
---
-ALTER TABLE `rodzaje_uslug`
-  ADD PRIMARY KEY (`id_uslugi`);
-
---
 -- Indeksy dla tabeli `uslugi`
 --
 ALTER TABLE `uslugi`
@@ -165,12 +148,6 @@ ALTER TABLE `klienci`
 --
 ALTER TABLE `mechanicy`
   MODIFY `id_mechanika` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `rodzaje_uslug`
---
-ALTER TABLE `rodzaje_uslug`
-  MODIFY `id_uslugi` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `uslugi`
