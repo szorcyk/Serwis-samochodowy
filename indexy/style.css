@@ -1,12 +1,13 @@
-
-        /*Ta czesc wzielam z ostatniej lekcji z JS co pan nam pokazywal*/
+      /*Ta czesc wzielam z ostatniej lekcji z JS co pan nam pokazywal*/
  *{
-    font-family: sans-serif;
+    font-family: 'Bricolage Grotesque';
+    
   }
   .header {
       overflow: hidden;
-      background-color: #351E10;
+      background-color: #2b1d1d;
       padding:10px 5px;
+      background-color: #2b1d1d;
     }
     
     
@@ -31,7 +32,7 @@
     
     
     .header a.active {
-      background-color: #780606;
+      background-color: #940000;
       color: white;
     }
     
@@ -52,7 +53,7 @@
       }
     }
     .main{
-      background-color: #351E10;
+      background-color: #2b1d1d;
       color: white;
       font-size: 25px;
       width: 96,5%;
@@ -109,7 +110,7 @@
   button {
       margin-top: 10px;
       padding: 8px 16px;
-      background-color: #351E10;
+      background-color: #2b1d1d;
       color: white;
       border: none;
       border-radius: 20px;
@@ -117,7 +118,7 @@
   }
   
   button:hover {
-      background-color: #780606;
+      background-color: #940000;
   }
   
   .prev, .next {
@@ -165,14 +166,16 @@
 .kontakt{
     border-radius: 20px;
     color: white;
-    background-color: #780606;
-    padding: 0;
+    background-color: #940000;
+    font-size:35px;  
+    text-align: center;
+    border-color: #940000;
     
    
     
   }
   footer{
-    background-color: #351E10;
+    background-color: #2b1d1d;
     color: white;
     padding: 7px;
     margin: auto;
