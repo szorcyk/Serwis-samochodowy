@@ -18,3 +18,4 @@ function updateSlider() {
     const slider = document.querySelector('.slider');
     const slideWidth = slides[0].clientWidth + 20; // Szerokość + margines
     slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+}
