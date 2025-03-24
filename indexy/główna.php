@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serwis Samochodowy</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Bricolage Grotesque' rel='stylesheet'>
 </head>
 <body>
   <script src="main.js"></script>
@@ -142,8 +143,8 @@
 
     <!-- Tekst na obrazku -->
     <div style="position: relative; z-index: 2;">
-        <h3 style="margin: 0;">MOZESZ ZAPISAC SIE POPRZEZ NASZA STRONE,<br>NUMER TELEFONU ORAZ PZRYJECHAC!</h3>
-        <input type="button"style="font-size:35px  padding:30px"class="kontakt" value="SKONTAKTUJ SIE Z NAMI!">
+        <h3 style="margin: 0;">MOZESZ ZAPISAC SIE POPRZEZ NASZA STRONE,<br>NUMER TELEFONU ORAZ PZRYJECHAC!</h3><br>
+        <input type="button"class="kontakt" value="SKONTAKTUJ SIE Z NAMI!">
     </div>
      
     </section>
