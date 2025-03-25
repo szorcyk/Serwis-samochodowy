@@ -1,21 +1,34 @@
-//to jeszcze nie dziala jak cos
-let currentSlide = 0;
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slide");
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
+    
+    let currentIndex = 0;
+    const slidesToShow = 3; // Ilość widocznych slajdów
+    const slideWidth = slides[0].offsetWidth + 20; // Szerokość slajdu + margines
 
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
+    function updateSliderPosition() {
+        slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
 
-document.querySelector('.next').addEventListener('click', () => {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    updateSlider();
+    nextButton.addEventListener("click", function () {
+        if (currentIndex < slides.length - slidesToShow) {
+            currentIndex++;
+            updateSliderPosition();
+        }
+    });
+
+    prevButton.addEventListener("click", function () {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSliderPosition();
+        }
+    });
+
+    // Aktualizacja rozmiaru slajdu po załadowaniu strony
+    window.addEventListener("resize", function () {
+        slideWidth = slides[0].offsetWidth + 20;
+        updateSliderPosition();
+    });
 });
-
-document.querySelector('.prev').addEventListener('click', () => {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    updateSlider();
-});
-
-function updateSlider() {
-    const slider = document.querySelector('.slider');
-    const slideWidth = slides[0].clientWidth + 20; // Szerokość + margines
-    slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-}
