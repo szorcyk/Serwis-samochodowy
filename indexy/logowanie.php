@@ -67,7 +67,7 @@
     <title>Logowanie</title>
 </head>
 <body>
-<p><a id="wracanie" href="">WRÓĆ</a></p>
+<p><a id="wracanie" href="główna.php">WRÓĆ</a></p>
 <br>
     <div class="logowanie">
         <h1>ZALOGUJ</h1>
