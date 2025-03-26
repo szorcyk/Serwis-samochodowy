@@ -6,9 +6,10 @@
     <title>Serwis Samochodowy</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Bricolage Grotesque' rel='stylesheet'>
+    <script src="ma.js"></script>
 </head>
 <body>
-  <script src="main.js"></script>
+  
     <header>
     <div class="header">
     <a href="#default">TURBOFIX</a>
@@ -74,7 +75,7 @@
     <button class="prev">&#60;</button> <!-- Strzałka w lewo -->
     <div class="slider-wrapper"> <!-- Nowy wrapper dla lepszej kontroli przesuwania -->
         <div class="slider">
-            <div class="slide" style="background-image: url('olej.jpg');">
+            <div class="slide" style="background-image: url('olej.jpg'); ">
                 <h2>WYMIANA OLEJU I FILTRÓW</h2>
                 <p>olej silnikowy, filtr oleju, paliwa, powietrza i kabinowy</p>
                 <button>SPRAWDŹ</button>
@@ -84,7 +85,7 @@
                 <p>napełnianie, odgrzybianie, diagnostyka i naprawa układu klimatyzacji</p>
                 <button>SPRAWDŹ</button>
             </div>
-            <div class="slide" style="background-image: url('opony.jpeg');">
+            <div class="slide" style="background-image: url('opony.jpeg'); ">
                 <h2>WYMIANA OPON</h2>
                 <p>montaż, demontaż, wyważanie kół, geometria zawieszenia</p>
                 <button>SPRAWDŹ</button>
