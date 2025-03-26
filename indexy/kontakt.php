@@ -17,7 +17,49 @@
         p {
             color: ;
         }
+        form {
+            margin: 0 5%;
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
+        .form-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .form-row input {
+            flex: 1;
+        }
+
+        form input[type="text"]{
+            border-style: solid;
+            border-radius: 50px;
+            border-color: white;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        form input[type="submit"] {
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #cc0000;
+        }
+        .poprawo{
+            width: 50%;
+            float: left;
+        }
     </style>
 </head>
 <body>
@@ -37,8 +79,10 @@
         <h1>JESTEŚMY TU</h1>
         <form action="" method="post">
             <h2>ZAPISZ</h2>
+            <div class="form-row">
             <input type="text" name="imie" placeholder="Imię">
-            <input type="number" maxlength="9" name="numer" placeholder="Numer telefonu">
+            <input type="text" maxlength="9" name="numer" placeholder="Numer telefonu">
+            </div>
             <input type="text" name="opis" placeholder="Opis problemu">
             <p>Żeby zapisywać sie szybciej, wybierać mechanika i termin <u>zaloguj</u> lub <u>zarejestruj się</u></p>
             <input type="submit" value="Wyślij">
@@ -46,8 +90,7 @@
     </section>
         <!-- Nie mam pojęcia jak wstawić tą strzałkę -->
         <section class="poprawo">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19144.03251059453!2d23.092124314881595!3d53.14602161269243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc8452e74f8f%3A0x8a24c9dd9ddca50d!2sWysoki%20Stoczek%2C%20Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1742990623110!5m2!1spl!2spl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-             <img>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19144.03251059453!2d23.092124314881595!3d53.14602161269243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc8452e74f8f%3A0x8a24c9dd9ddca50d!2sWysoki%20Stoczek%2C%20Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1742990623110!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             
              <h2>WOLNE TERMINY</h2>
              <!-- Nie wiem czy to wystarczy, ale jak coś będzie nie tak to spróbuję poprawić -->
