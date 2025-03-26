@@ -81,7 +81,7 @@
             <div class="header-right">
                 <a class="active" href="#home">ZALOGUJ</a>
                 <a href="#services">USŁUGI</a>
-                <a href="#price">CENNIK</a>
+                
             </div>
         </div> 
     </header>
