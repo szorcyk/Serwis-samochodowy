@@ -17,7 +17,7 @@
           <a class="active" href="#home">ZALOGUJ</a>
           <a href="#services">USŁUGI</a>
           <a href="#contact">KONTAKT</a>
-          <a href="#price">CENNIK</a>
+          
         </div>
       </div> 
       <div class="header2">
