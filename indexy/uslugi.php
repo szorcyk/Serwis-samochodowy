@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Usługi</title>
+    <style>
+        *{
+            background-color: #2b1d1d;
+            border-width: 1px;
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Bricolage Grotesque' rel='stylesheet'>
 </head>
 <body>
     <header>
@@ -22,7 +29,7 @@
     </section>
     <section class="tabela">
         <?php
-        $db_lnk = mysqli_connect("localhost", "root", "", "turbofix");
+        $db_lnk = mysqli_connect("localhost", "root", "", "turbofix_baza");
         
         $query = "SELECT * from uslugi";
         $result = mysqli_query($db_lnk, $query);
@@ -48,6 +55,6 @@
 
          
         ?>
-    
+    </section>
 </body>
 </html>
