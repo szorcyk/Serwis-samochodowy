@@ -97,12 +97,10 @@
 <body>
         <header>
         <div class="header">
-        <a href="#default">TURBOFIX</a>
+        <a href="główna.php">TURBOFIX</a>
             <div class="header-right">
-            <a class="active" href="#home">ZALOGUJ</a>
-            <a href="#services">USŁUGI</a>
-            <a href="#contact">KONTAKT</a>
-            <a href="#price">CENNIK</a>
+            <a class="active" href="logowanie.php">ZALOGUJ</a>
+            <a href="uslugi.php">USŁUGI</a>
             </div>
         </div>
         </header>

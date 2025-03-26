@@ -14,9 +14,9 @@
     <div class="header">
     <a href="#default">TURBOFIX</a>
         <div class="header-right">
-          <a class="active" href="#home">ZALOGUJ</a>
-          <a href="#services">USŁUGI</a>
-          <a href="#contact">KONTAKT</a>
+          <a class="active" href="logowanie.php">ZALOGUJ</a>
+          <a href="uslugi.php">USŁUGI</a>
+          <a href="kontakt.php">KONTAKT</a>
           
         </div>
       </div> 
