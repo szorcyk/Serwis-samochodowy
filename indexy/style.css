@@ -6,6 +6,7 @@
     overflow: hidden;
     background-color: #2b1d1d;
     padding:10px 5px;
+    background-color: #2b1d1d;
   }
   
   
@@ -76,10 +77,11 @@
 
 .slide {
     min-width:350px;
-    max-width:120px;
+    max-height: 320px;
+    max-width:100px;
     margin: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
