@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 19, 2025 at 03:47 PM
+-- Generation Time: Mar 26, 2025 at 03:39 PM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -32,9 +32,33 @@ CREATE TABLE `historia_napraw` (
   `id_mechanika` int(11) DEFAULT NULL,
   `id_klienta` int(11) DEFAULT NULL,
   `id_uslugi` int(11) DEFAULT NULL,
-  `data` date NOT NULL,
-  `cena` decimal(10,2) NOT NULL
+  `data` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `historia_napraw`
+--
+
+INSERT INTO `historia_napraw` (`ID`, `id_mechanika`, `id_klienta`, `id_uslugi`, `data`) VALUES
+(16, 1, 3, 5, '2024-03-01'),
+(17, 2, 1, 3, '2024-03-02'),
+(18, 3, 4, 8, '2024-03-03'),
+(19, 4, 2, 6, '2024-03-04'),
+(20, 5, 5, 2, '2024-03-05'),
+(21, 1, 2, 7, '2024-03-06'),
+(22, 2, 3, 4, '2024-03-07'),
+(23, 3, 1, 9, '2024-03-08'),
+(24, 4, 5, 10, '2024-03-09'),
+(25, 5, 4, 1, '2024-03-10'),
+(26, 1, 5, 6, '2024-03-11'),
+(27, 2, 4, 3, '2024-03-12'),
+(28, 3, 2, 8, '2024-03-13'),
+(29, 4, 1, 5, '2024-03-14'),
+(30, 5, 3, 7, '2024-03-15'),
+(31, 6, 3, 5, '2024-03-01'),
+(32, 7, 1, 3, '2024-03-02'),
+(33, 3, 7, 8, '2024-03-03'),
+(34, 5, 6, 7, '2024-03-15');
 
 -- --------------------------------------------------------
 
@@ -45,18 +69,23 @@ CREATE TABLE `historia_napraw` (
 CREATE TABLE `klienci` (
   `id_klienta` int(11) NOT NULL,
   `imie` text NOT NULL,
-  `nazwisko` text NOT NULL
+  `nazwisko` text NOT NULL,
+  `login` varchar(15) DEFAULT NULL,
+  `password` varchar(40) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
 -- Dumping data for table `klienci`
 --
 
-INSERT INTO `klienci` (`id_klienta`, `imie`, `nazwisko`) VALUES
-(1, 'Adam', 'Mickiewicz'),
-(2, 'Andrzej', 'Kmicic'),
-(3, 'Jan', 'Kazimierz'),
-(4, 'Janusz', 'Radziwiłł');
+INSERT INTO `klienci` (`id_klienta`, `imie`, `nazwisko`, `login`, `password`) VALUES
+(1, 'Jan', 'Kowalski', 'janek123', 'hasloJanek'),
+(2, 'Anna', 'Nowak', 'anna_n', 'bezpieczneHaslo1'),
+(3, 'Piotr', 'Wiśniewski', 'piotrekW', 'mojeTajneHaslo'),
+(4, 'Katarzyna', 'Dąbrowska', 'kasiaD', 'hasloKasia2024'),
+(5, 'Marek', 'Jankowski', 'marekJ', 'Marek123!'),
+(6, 'Magdalena', 'Zielińska', 'magdaZ', 'magdaSuperHaslo'),
+(7, 'Tomasz', 'Lewandowski', 'tomekL', 'tomekBezpieczne');
 
 -- --------------------------------------------------------
 
@@ -68,15 +97,61 @@ CREATE TABLE `mechanicy` (
   `id_mechanika` int(11) NOT NULL,
   `imie` text NOT NULL,
   `nazwisko` text NOT NULL,
-  `rodzaj_uslug` text NOT NULL
+  `login` varchar(15) DEFAULT NULL,
+  `password` varchar(40) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
 
 --
 -- Dumping data for table `mechanicy`
 --
 
-INSERT INTO `mechanicy` (`id_mechanika`, `imie`, `nazwisko`, `rodzaj_uslug`) VALUES
-(1, 'Jan', 'Sobieski', 'Naprawa układów hamulcowych.\r\nNaprawa zawieszenia i układu kierowniczego.\r\nSerwis układu wydechowego.\r\nWymiana i wyważanie opon.');
+INSERT INTO `mechanicy` (`id_mechanika`, `imie`, `nazwisko`, `login`, `password`) VALUES
+(1, 'Andrzej', 'Kowalski', 'andrzejK', 'hasloAndrzej'),
+(2, 'Piotr', 'Nowak', 'piotrN', 'mechanik123'),
+(3, 'Krzysztof', 'Wiśniewski', 'krzysztofW', 'tajneHaslo'),
+(4, 'Tomasz', 'Dąbrowski', 'tomaszD', 'superMechanik'),
+(5, 'Marek', 'Jankowski', 'marekJ', 'hasloMarek!'),
+(6, 'Magdalena', 'Zielińska', 'magdaZ', 'magdaSerwis'),
+(7, 'Łukasz', 'Lewandowski', 'lukaszL', 'lukaszBezpieczne');
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `terminy`
+--
+
+CREATE TABLE `terminy` (
+  `ID` int(11) NOT NULL,
+  `id_mechanika` int(11) DEFAULT NULL,
+  `data` date DEFAULT NULL,
+  `czas` varchar(12) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `terminy`
+--
+
+INSERT INTO `terminy` (`ID`, `id_mechanika`, `data`, `czas`) VALUES
+(1, 1, '2024-03-01', '15:30-18:30'),
+(2, 2, '2024-03-02', '15:30-18:30'),
+(3, 3, '2024-03-03', '15:30-18:30'),
+(4, 4, '2024-03-04', '15:30-18:30'),
+(5, 5, '2024-03-05', '15:30-18:30'),
+(6, 1, '2024-03-06', '11:30-13:30'),
+(7, 2, '2024-03-07', '11:30-13:30'),
+(8, 3, '2024-03-08', '11:30-13:30'),
+(9, 4, '2024-03-09', '11:30-13:30'),
+(10, 5, '2024-03-10', '11:30-13:30'),
+(11, 1, '2024-03-11', '14:00-15:30'),
+(12, 2, '2024-03-12', '14:00-15:30'),
+(13, 3, '2024-03-13', '14:00-15:30'),
+(14, 4, '2024-03-14', '14:00-15:30'),
+(15, 5, '2024-03-15', '14:00-15:30'),
+(16, 1, '2024-03-06', '9:00-11:00'),
+(17, 2, '2024-03-07', '9:00-11:00'),
+(18, 3, '2024-03-08', '9:00-11:00'),
+(19, 4, '2024-03-09', '9:00-11:00'),
+(20, 5, '2024-03-10', '9:00-11:00');
 
 -- --------------------------------------------------------
 
@@ -138,6 +213,13 @@ ALTER TABLE `mechanicy`
   ADD PRIMARY KEY (`id_mechanika`);
 
 --
+-- Indeksy dla tabeli `terminy`
+--
+ALTER TABLE `terminy`
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `id_mechanika` (`id_mechanika`);
+
+--
 -- Indeksy dla tabeli `uslugi`
 --
 ALTER TABLE `uslugi`
@@ -151,19 +233,25 @@ ALTER TABLE `uslugi`
 -- AUTO_INCREMENT for table `historia_napraw`
 --
 ALTER TABLE `historia_napraw`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `klienci`
 --
 ALTER TABLE `klienci`
-  MODIFY `id_klienta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_klienta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `mechanicy`
 --
 ALTER TABLE `mechanicy`
-  MODIFY `id_mechanika` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_mechanika` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `terminy`
+--
+ALTER TABLE `terminy`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `uslugi`
@@ -179,9 +267,15 @@ ALTER TABLE `uslugi`
 -- Constraints for table `historia_napraw`
 --
 ALTER TABLE `historia_napraw`
-  ADD CONSTRAINT `historia_napraw_ibfk_1` FOREIGN KEY (`id_mechanika`) REFERENCES `mechanicy` (`id_mechanika`),
-  ADD CONSTRAINT `historia_napraw_ibfk_2` FOREIGN KEY (`id_klienta`) REFERENCES `klienci` (`id_klienta`),
-  ADD CONSTRAINT `historia_napraw_ibfk_3` FOREIGN KEY (`id_uslugi`) REFERENCES `uslugi` (`id_uslugi`);
+  ADD CONSTRAINT `historia_napraw_ibfk_1` FOREIGN KEY (`id_mechanika`) REFERENCES `mechanicy` (`id_mechanika`) ON DELETE CASCADE,
+  ADD CONSTRAINT `historia_napraw_ibfk_2` FOREIGN KEY (`id_klienta`) REFERENCES `klienci` (`id_klienta`) ON DELETE CASCADE,
+  ADD CONSTRAINT `historia_napraw_ibfk_3` FOREIGN KEY (`id_uslugi`) REFERENCES `uslugi` (`id_uslugi`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `terminy`
+--
+ALTER TABLE `terminy`
+  ADD CONSTRAINT `terminy_ibfk_1` FOREIGN KEY (`id_mechanika`) REFERENCES `mechanicy` (`id_mechanika`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
