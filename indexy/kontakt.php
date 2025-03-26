@@ -3,7 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: #2b1d1d;
+            color: white;
+        }
+        .polewo{
+            width: 50%;
+            float: left;
+        }
+        p {
+            color: ;
+        }
+
+    </style>
 </head>
 <body>
         <header>
@@ -16,6 +31,7 @@
             <a href="#price">CENNIK</a>
             </div>
         </div>
+        </header>
     <section class="polewo">
 
         <h1>JESTEŚMY TU</h1>
@@ -30,7 +46,7 @@
     </section>
         <!-- Nie mam pojęcia jak wstawić tą strzałkę -->
         <section class="poprawo">
-            <!-- Mapa -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19144.03251059453!2d23.092124314881595!3d53.14602161269243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc8452e74f8f%3A0x8a24c9dd9ddca50d!2sWysoki%20Stoczek%2C%20Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1742990623110!5m2!1spl!2spl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
              <img>
             
              <h2>WOLNE TERMINY</h2>

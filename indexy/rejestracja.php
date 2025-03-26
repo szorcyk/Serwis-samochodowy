@@ -89,10 +89,10 @@
 <br>
     <div class="logowanie">
         <h1>ZAREJESTRUJ SIĘ</h1>
-        <input type="text" id="login" name="login"value="LOGIN*"><br><br>
-        <input type="text" id="haslo"name="haslo" value="HASŁO*"><br><br>
-        <input type="text" id="numer" name="numer" value="NR.TEL*"><br><br>
-        <input type="text" id="email" name="email" value="EMAIL"><br><br>
+        <input type="text" id="login" name="login"placeholder="LOGIN*"><br><br>
+        <input type="text" id="haslo"name="haslo" placeholder="HASŁO*"><br><br>
+        <input type="text" id="numer" name="numer" placeholder="NR.TEL*"><br><br>
+        <input type="text" id="email" name="email" placeholder="EMAIL"><br><br>
         <input type="submit" id="submit" value="WYŚLIJ">
         <p>LUB <a style="color:#780606"href="">ZALOGUJ SIĘ</a></p>
     </div>
