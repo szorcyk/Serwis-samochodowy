@@ -17,26 +17,32 @@
             }
             #login{
                 background-color:#f0e9e2;
-                color: black;
+                color: #909090;
                 border-color: #f0e9e2;
                 text-align: left;
-                font-size:45px;
+                height: 55px;
+                width: 500px;
+                font-size:35px;
                 text-decoration: none;
                 border-radius: 20px;
                 padding: 5px;
 
             }
+            
             #haslo{
-                background-color: #f0e9e2;
-                color: black;
+                background-color:#f0e9e2;
+                color: #909090;
                 border-color: #f0e9e2;
                 text-align: left;
-                font-size:45px;
+                height: 55px;
+                width: 500px;
+                font-size:35px;
                 text-decoration: none;
                 border-radius: 20px;
                 padding: 5px;
+                
 
-
+           
             }
             #submit{
                 background-color: #940000;
@@ -65,8 +71,8 @@
 <br>
     <div class="logowanie">
         <h1>ZALOGUJ</h1>
-        <input type="text" id="login" name="login" placeholder="LOGIN"><br><br>
-        <input type="text" id="haslo"name="haslo" placeholder="HASŁO"><br><br>
+        <input type="text" id="login" name="login" value="Login"><br><br>
+        <input type="text" id="haslo"name="haslo" value="Hasło"><br><br>
         <input type="submit" id="submit" value="WYŚLIJ">
         <p>LUB <a style="color:#780606"href="">ZAREJESTRUJ SIĘ</a></p>
     </div>
