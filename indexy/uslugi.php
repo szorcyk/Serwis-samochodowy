@@ -21,44 +21,33 @@
         <h1>NASZE USŁUGI</h1>
     </section>
     <section class="tabela">
-        <h2>KLIMATYZACJA</h2>
-        <table>
-            <tr>
-                <th>Napełnianie klimatyzacji</th>
-                <td>Uzupełnienie czynnika chłodzącego, sprawdzenie szczelności</td>
-                <th>150-250zł</th>
-            </tr>
-            <tr>
-                <th>Odgrzybianie i dezynfekcja</th>
-                <td>Usuwanie bakterii i pleśni z układu klimatyzacji</td>
-                <th>70-150zł</th>
-            </tr>
-            <tr>
-                <th>Diagnostyka i naprawa</th>
-                <td>Wykrywanie nieszczelności, naprawa kompresora, wymiana osuszacza</td>
-                <th>100-400zł</th>
-            </tr>
-        </table>
-    </section>
-    <section class="tabela">
-        <h2>WYMIANA OLEJU I FILTRÓW</h2>
-        <table>
-            <tr>
-                <th>Wymiana oleju silnikowego</th>
-                <td>Dobór i wymiana oleju oraz filtra oleju</td>
-                <th>100-200zł</th>
-            </tr>
-            <tr>
-                <th>Wymiana filtrów powietrza i kabinowego</th>
-                <td>Poprawa jakości powietrza w kabinie i silniku</td>
-                <th>50-100zł</th>
-            </tr>
-            <tr>
-                <th>Wymiana filtra paliwa</th>
-                <td>Wykrywanie nieszczelności, naprawa kompresora, wymiana osuszacza</td>
-                <th>80-200zł</th>
-            </tr>
-        </table>
-    </section>
+        <?php
+        $db_lnk = mysqli_connect("localhost", "root", "", "turbofix");
+        
+        $query = "SELECT * from uslugi";
+        $result = mysqli_query($db_lnk, $query);
+
+        echo"<table>";
+        echo   "<tr>";
+    echo"<th>Nazwa usługi</th>";
+    echo"<th>Rodzaj usługi</th>";
+    echo"<th>Opis usługi</th>";
+    echo"<th>Cena usługi</th>";
+    echo  "</tr>";
+        
+            $count = mysqli_num_rows($result);
+            for($i = 0;$i<$count;$i++){
+                $row = mysqli_fetch_row($result);
+                echo   "<tr>";
+                echo "<td>$row[1]</td>";
+                echo "<td>$row[2]</td>";
+                echo "<td>$row[3]</td>";
+                echo "<td>$row[4]</td>";
+                echo  "</tr>";
+            }
+
+         
+        ?>
+    
 </body>
 </html>
