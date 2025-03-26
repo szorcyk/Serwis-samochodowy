@@ -60,6 +60,19 @@
             width: 50%;
             float: left;
         }
+        #opis{
+            height: 100px;
+            border-radius: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: left;
+            vertical-align: top;
+            resize: none;
+            border-style: none;
+        }
+        u {
+            color: #cc0000;
+        }
     </style>
 </head>
 <body>
@@ -83,7 +96,7 @@
             <input type="text" name="imie" placeholder="Imię">
             <input type="text" maxlength="9" name="numer" placeholder="Numer telefonu">
             </div>
-            <input type="text" name="opis" placeholder="Opis problemu">
+            <textarea id="opis" name="opis" placeholder="Opis problemu"></textarea>
             <p>Żeby zapisywać sie szybciej, wybierać mechanika i termin <u>zaloguj</u> lub <u>zarejestruj się</u></p>
             <input type="submit" value="Wyślij">
         </form>
