@@ -225,4 +225,12 @@ td{
   border-style: solid;
   border-width: 1px;
 }
-       
+
+.wyszukiwarka{
+  
+  color: black;
+  text-align: center;
+}
+.szukanie{
+  background-color: white;
+}   

@@ -27,11 +27,19 @@
     <section class="bloczek">
         <h1>NASZE USŁUGI</h1>
     </section>
+    <section class="wyszukiwarka">
+        <form method="POST" >
+            <input type="text" class="szukanie" name = "wyszukanie">
+            <input type="submit" value="Szukaj" class="szukanie">
+        </form>
+        <br>
+
+    </section>
     <section class="tabela">
         <?php
         $db_lnk = mysqli_connect("localhost", "root", "", "turbofix_baza");
-        
-        $query = "SELECT * from uslugi";
+        @$wyszukanie = $_POST['wyszukanie'];
+        $query = "SELECT * from uslugi WHERE nazwa_uslugi LIKE '%$wyszukanie%' or rodzaj_uslugi LIKE '%$wyszukanie%' or opis_uslugi LIKE '%$wyszukanie%'";
         $result = mysqli_query($db_lnk, $query);
 
         echo"<table>";
@@ -52,6 +60,7 @@
                 echo "<td>$row[4]</td>";
                 echo  "</tr>";
             }
+
 
          
         ?>
