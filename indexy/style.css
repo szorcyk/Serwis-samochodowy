@@ -183,41 +183,46 @@ footer{
   margin: auto;
   border: none;
 }
-
-        .bloczek{
-          padding-top: 40px;
-          padding-bottom: 40px;
-          text-align: center;
-          color: white;
-          background-color: #351E10;
-        }
-        .tabela{
-          background-color: #351E10;
-          color: white;
-          text-align: center;
-          border-color: white;
-          border-style: solid;
-          height: 70%;
-        }
-        table{
-          margin-left: 10%;
-          margin-right: 10%;
-          width: 80%;
-          align-self: center;
-          border-color: white;
-          border-style: solid;
-          border-width: 2px;
-          border-collapse: collapse;
-        }
-        tr {
-          font-size: medium;
-          border-color: white;
-          border-style: solid;
-          border-width: 2px;
-        }
-        td{
-          font-size: small;
-          border-color: white;
-          border-style: solid;
-          border-width: 2px;
-        }
+/*css pliku uslugi*/
+.bloczek{
+  font-size: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+  background-color: #2b1d1d;
+}
+.tabela{
+  background-color: #2b1d1d;
+  color: white;
+  text-align: center;
+  border-color: white;
+  border-style: solid;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+}
+table{
+  
+  width: 100%;
+  align-self: center;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-collapse: collapse;
+}
+tr {
+  padding: 20px;
+  font-size: medium;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+td{
+  padding: 20px;
+  font-size: medium;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+       
