@@ -53,7 +53,6 @@
                 padding-left: 210px;
                 padding-right: 210px;
 
-
                 
                
                 
@@ -62,6 +61,9 @@
                 font-size: 75px;
                 
             }
+        }
+        input{
+            border-style: none;
         }
     </style>
     <title>Logowanie</title>
@@ -74,7 +76,7 @@
         <input type="text" id="login" name="login" value="Login"><br><br>
         <input type="text" id="haslo"name="haslo" value="Hasło"><br><br>
         <input type="submit" id="submit" value="WYŚLIJ">
-        <p>LUB <a style="color:#780606"href="">ZAREJESTRUJ SIĘ</a></p>
+        <p>LUB <a style="color:#780606"href="rejestracja.php">ZAREJESTRUJ SIĘ</a></p>
     </div>
     
 </body>

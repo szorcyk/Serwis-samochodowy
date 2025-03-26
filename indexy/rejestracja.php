@@ -91,6 +91,9 @@
                 text-align: center;
             }
         }
+        input{
+            border-style: none;
+        }
     </style>
     <title>Rejestrowanie się</title>
 </head>
@@ -104,7 +107,7 @@
         <input type="text" id="numer" name="numer" value="Nr.tel*"><br><br>
         <input type="email" id="email" name="email" value="Email"><br><br>
         <input type="submit" id="submit" value="WYŚLIJ">
-        <p>LUB <a style="color:#780606"href="">ZALOGUJ SIĘ</a></p>
+        <p>LUB <a style="color:#780606"href="logowanie.php">ZALOGUJ SIĘ</a></p>
     </div>
     
 </body>
