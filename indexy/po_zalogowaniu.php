@@ -16,6 +16,7 @@
         }
         h1 {
             text-align: center;
+            color:#2b1d1d ;
             font-size: 35px;
         }
         .container {
@@ -95,12 +96,15 @@
                 <option value="Paweł Nowak">
                 <option value="Tomasz Wiśniewski">
                 <option value="Anna Kaczmarek">
+                <option value="Anna Kaczmarek">
+                <option value="Anna Kaczmarek">
             </datalist>
             <textarea name="problem" placeholder="Opisz problem"></textarea>
         </div>
 
         <div class="form-group">
             <h1>WOLNE TERMINY</h1>
+            <br><br>
             <input type="text" id="termin" name="termin" placeholder="Wybierz termin" list="terminy">
             <datalist id="terminy">
                 <option value="Poniedziałek 08:00">
