@@ -105,13 +105,33 @@
         </div>
         </header>
     <section class="polewo">
-
+            <?php
+            $db_lnk = new mysqli('localhost', 'root', "", 'turbofix');
+            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['termin'])) {
+                $id = intval($_POST['termin']);
+                $sql = "DELETE FROM terminy WHERE id = $id";
+                $db_lnk->query($sql);
+            }
+            
+            $sql = "SELECT id, data, czas FROM terminy ORDER BY data ASC";
+            $result = $db_lnk->query($sql);
+            ?>
         <h1>JESTEŚMY TU</h1>
         <form action="" method="post">
-            <h2>ZAPISZ</h2>
+            <h2>ZAPISZ SIĘ</h2>
             <div class="form-row">
                 <input type="text" name="imie" placeholder="Imię">
                 <input type="text" maxlength="9" name="numer" placeholder="Numer telefonu">
+                <label>Wybierz datę:</label>
+                <select name="termin">
+                    <?php while ($row = $result->fetch_assoc()): ?>
+                    <option value="<?php echo $row['id']; ?>">
+                        <?php echo $row['data']; ?>
+                    </option>
+                    <?php endwhile; 
+                    $db_lnk->close();
+                    ?>
+                </select>
             </div>
             <textarea id="opis" name="opis" placeholder="Opis problemu"></textarea>
             <p>Żeby zapisywać sie szybciej, wybierać mechanika i termin <a href="logowanie.php">zaloguj</a> lub <a href="rejestracja.php">zarejestruj się</a></p>
@@ -126,7 +146,30 @@
             <div class="godziny">
              <h2>WOLNE TERMINY</h2>
              <!-- Nie wiem czy to wystarczy, ale jak coś będzie nie tak to spróbuję poprawić -->
-                <?php?>
+                <?php
+                $db_lnk = new mysqli('localhost', 'root', "", 'turbofix');
+                ?>
+                <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Data</th>
+                    <th>Godzina</th>
+                </tr>
+                <?php
+                $result = $db_lnk->query($sql);
+                while ($row = $result->fetch_assoc()): ?>
+                    <tr>
+                        <td><?php echo $row['id']; ?></td>
+                        <td><?php echo $row['data']; ?></td>
+                        <td><?php echo $row['czas']; ?></td>
+                    </tr>
+                <?php endwhile; ?>
+            </table>
+
+
+                    <?php
+                $db_lnk->close();
+                ?>
             </div>
         </section>
 </body>
