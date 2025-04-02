@@ -147,8 +147,9 @@
 
     <!-- Tekst na obrazku -->
     <div style="position: relative; z-index: 2;">
-        <h3 style="margin: 0;">MOZESZ ZAPISAC SIE POPRZEZ NASZA STRONE,<br>NUMER TELEFONU ORAZ PZRYJECHAC!</h3><br>
-        <input type="button"class="kontakt" value="SKONTAKTUJ SIE Z NAMI!">
+        <h3 style="margin: 0;">MOŻESZ ZAPISAĆ SIĘ POPRZEZ NASZĄ STRONĘ,<br>NUMER TELEFONU ORAZ PRZYJECHAĆ!</h3><br>
+        <!-- <button><input type="button"class="kontakt" value="SKONTAKTUJ SIE Z NAMI!"></button> -->
+        <button><a href="kontakt.php">SKONTAKTUJ SIĘ Z NAMI!</a></button>
     </div>
      
     </section>
