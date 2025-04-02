@@ -240,4 +240,7 @@ td{
 input{
   border-style: none;
 }
-
+a{
+  text-decoration: none;
+  color: white;
+}

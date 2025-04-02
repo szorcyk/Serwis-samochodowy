@@ -78,32 +78,32 @@
             <div class="slide" style="background-image: url('olej.jpg'); ">
                 <h2>WYMIANA OLEJU I FILTRÓW</h2>
                 <p>olej silnikowy, filtr oleju, paliwa, powietrza i kabinowy</p>
-                <button>SPRAWDŹ</button>
+                <button><a href="uslugi.php">SPRAWDŹ</a></button>
             </div>
             <div class="slide" style="background-image: url('klimatyzacja.jpg');">
                 <h2>KLIMATYZACJA</h2>
                 <p>napełnianie, odgrzybianie, diagnostyka i naprawa układu klimatyzacji</p>
-                <button>SPRAWDŹ</button>
+                <button><a href="uslugi.php">SPRAWDŹ</a></button>
             </div>
             <div class="slide" style="background-image: url('opony.jpeg'); ">
                 <h2>WYMIANA OPON</h2>
                 <p>montaż, demontaż, wyważanie kół, geometria zawieszenia</p>
-                <button>SPRAWDŹ</button>
+                <button><a href="uslugi.php">SPRAWDŹ</a></button>
             </div>
             <div class="slide" style="background-image: url('hamulce.jpg');">
                 <h2>NAPRAWA UKŁADU HAMULCOWEGO</h2>
                 <p>wymiana klocków, tarcz, przewodów hamulcowych i płynu</p>
-                <button>SPRAWDŹ</button>
+                <button><a href="uslugi.php">SPRAWDŹ</a></button>
             </div>
             <div class="slide" style="background-image: url('zawieszenia.png');">
                 <h2>NAPRAWA ZAWIESZENIA I UKŁADU KIEROWNICZEGO</h2>
                 <p>amortyzatory, wahacze, drążki kierownicze</p>
-                <button>SPRAWDŹ</button>
+                <button><a href="uslugi.php">SPRAWDŹ</a></button>
             </div>
             <div class="slide" style="background-image: url('wydechy.jpg');">
                 <h2>SERWIS UKŁADU WYDECHOWEGO</h2>
                 <p>naprawa lub wymiana tłumików, katalizatorów, sond lambda</p>
-                <button>SPRAWDŹ</button>
+                <button><a href="uslugi.php">SPRAWDŹ</a></button>
             </div>
         </div>
     </div>
