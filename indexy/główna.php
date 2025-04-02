@@ -6,7 +6,7 @@
     <title>Serwis Samochodowy</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Bricolage Grotesque' rel='stylesheet'>
-    <script src="ma.js"></script>
+    <script src="główna.js"></script>
 </head>
 <body>
   
