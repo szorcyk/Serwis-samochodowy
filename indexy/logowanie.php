@@ -73,8 +73,8 @@
 <br>
     <div class="logowanie">
         <h1>ZALOGUJ</h1>
-        <input type="text" id="login" name="login" value="Login"><br><br>
-        <input type="text" id="haslo"name="haslo" value="Hasło"><br><br>
+        <input type="text" id="login" name="login" placeholder="Login"><br><br>
+        <input type="text" id="haslo"name="haslo" placeholder="Hasło"><br><br>
         <input type="submit" id="submit" value="WYŚLIJ">
         <p>LUB <a style="color:#780606"href="rejestracja.php">ZAREJESTRUJ SIĘ</a></p>
     </div>
