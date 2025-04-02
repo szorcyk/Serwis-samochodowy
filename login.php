@@ -1,4 +1,4 @@
-?php
+<?php
 session_start();
 require 'db.php'; // Plik z połączeniem do bazy danych
 
