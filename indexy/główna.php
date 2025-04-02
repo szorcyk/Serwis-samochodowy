@@ -149,9 +149,8 @@
     <div style="position: relative; z-index: 2;">
         <h3 style="margin: 0;">MOŻESZ ZAPISAĆ SIĘ POPRZEZ NASZĄ STRONĘ,<br>NUMER TELEFONU ORAZ PRZYJECHAĆ!</h3><br>
         <!-- <button><input type="button"class="kontakt" value="SKONTAKTUJ SIE Z NAMI!"></button> -->
-        <button><a href="kontakt.php">SKONTAKTUJ SIĘ Z NAMI!</a></button>
+        <button id="guzik"><a href="kontakt.php">SKONTAKTUJ SIĘ Z NAMI!</a></button>
     </div>
-     
     </section>
     <footer>
       <p>Autorzy strony: Hrysevich Viktoryia(JS, HTML&CSS), Kachuk Sofya(UX, UI, PHP, baza danych), Rakowski Kacper(UX, PHP, baza danych), Szorc Antoni(HTML&CSS)</p>
