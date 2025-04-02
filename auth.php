@@ -43,12 +43,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($action === 'register') {
         if (register($conn, $role, $_POST['imie'], $_POST['nazwisko'], $_POST['login'], $_POST['password'])) {
             echo "Rejestracja zakończona sukcesem!";
+            //redirect do strony logowanie
         } else {
             echo "Błąd podczas rejestracji.";
         }
     } elseif ($action === 'login') {
         if (login($conn, $role, $_POST['login'], $_POST['password'])) {
             echo "Logowanie powiodło się!";
+            //redirect do strony pologowaniu
         } else {
             echo "Nieprawidłowy login lub hasło.";
         }
