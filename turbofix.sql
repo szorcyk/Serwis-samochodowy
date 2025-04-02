@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 26, 2025 at 01:30 PM
+-- Generation Time: Apr 02, 2025 at 02:23 PM
 -- Wersja serwera: 10.4.32-MariaDB
 -- Wersja PHP: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `turbofix`
+-- Database: `turbofix.php`
 --
 
 -- --------------------------------------------------------
@@ -117,6 +117,34 @@ INSERT INTO `mechanicy` (`id_mechanika`, `imie`, `nazwisko`, `login`, `password`
 -- --------------------------------------------------------
 
 --
+-- Struktura tabeli dla tabeli `terminy`
+--
+
+CREATE TABLE `terminy` (
+  `ID` int(11) NOT NULL,
+  `data` varchar(12) DEFAULT NULL,
+  `czas` varchar(12) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `terminy`
+--
+
+INSERT INTO `terminy` (`ID`, `data`, `czas`) VALUES
+(1, '2025-04-03', '10:30:00'),
+(2, '2025-04-04', '14:00:00'),
+(3, '2025-04-05', '09:15:00'),
+(4, '2025-04-06', '16:45:00'),
+(5, '2025-04-07', '11:20:00'),
+(6, '2025-04-08', '13:55:00'),
+(7, '2025-04-09', '08:10:00'),
+(8, '2025-04-10', '17:30:00'),
+(9, '2025-04-11', '12:40:00'),
+(10, '2025-04-12', '15:25:00');
+
+-- --------------------------------------------------------
+
+--
 -- Struktura tabeli dla tabeli `uslugi`
 --
 
@@ -174,6 +202,12 @@ ALTER TABLE `mechanicy`
   ADD PRIMARY KEY (`id_mechanika`);
 
 --
+-- Indeksy dla tabeli `terminy`
+--
+ALTER TABLE `terminy`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Indeksy dla tabeli `uslugi`
 --
 ALTER TABLE `uslugi`
@@ -200,6 +234,12 @@ ALTER TABLE `klienci`
 --
 ALTER TABLE `mechanicy`
   MODIFY `id_mechanika` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `terminy`
+--
+ALTER TABLE `terminy`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `uslugi`
