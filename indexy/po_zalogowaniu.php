@@ -88,16 +88,29 @@
     </header>
 
     <div class="container">
-        <form action="/submit-form" method="POST">
+        <?php
+        $db_lnk = mysqli_connect('localhost', 'root','','turbofix');
+
+        $sql = "SELECT imie, nazwisko FROM mechanicy ORDER BY nazwisko ASC";
+        $result = $db_lnk->query($sql);
+        
+        
+        
+        ?>
+        <form action="mailto:na_pewno_prawdziwy_email_123@gmail.com" method="POST">
             <div class="form-group">
                 <h1>WYBIERZ MECHANIKA</h1>
                 <input type="text" id="mechanic" name="mechanic" placeholder="Wybierz mechanika" list="mechanicy">
                 <datalist id="mechanicy">
-                    <option value="Jakub Kowalczuk">
-                    <option value="Marcin Monarek">
-                    <option value="Paweł Nowak">
-                    <option value="Tomasz Wiśniewski">
-                    <option value="Anna Kaczmarek">
+                <?php while ($row = $result->fetch_assoc()): ?>
+                    <option value="<?php echo $row['imie']." ".$row['nazwisko']; ?>">
+                    <?php echo $row['imie']." ".$row['nazwisko']; ?>
+                    </option>
+                    
+                <?php 
+                    endwhile; 
+                    $db_lnk->close();
+                ?>
                 </datalist>
                 <textarea name="problem" id="problem" placeholder="Opisz problem"></textarea>
                 <button type="submit" class="przycisk">ZAPISZ SIĘ</button>
