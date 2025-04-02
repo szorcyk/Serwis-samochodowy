@@ -36,7 +36,7 @@
     </section>
     <section class="tabela">
         <?php
-        $db_lnk = mysqli_connect("localhost", "root", "", "turbofix_baza");
+        $db_lnk = mysqli_connect("localhost", "root", "", "turbofix");
         @$wyszukanie = $_POST['wyszukanie'];
         $query = "SELECT * from uslugi WHERE nazwa_uslugi LIKE '%$wyszukanie%' or rodzaj_uslugi LIKE '%$wyszukanie%' or opis_uslugi LIKE '%$wyszukanie%'";
         $result = mysqli_query($db_lnk, $query);
