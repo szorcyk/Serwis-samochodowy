@@ -1,0 +1,10 @@
+('Jan', 'Kowalski', 'janek123', SHA2('hasloJanek', 256)),
+
+
+
+('Anna', 'Nowak', 'anna_n', SHA2('bezpieczneHaslo1', 256)),
+('Piotr', 'Wiśniewski', 'piotrekW', SHA2('mojeTajneHaslo', 256)),
+('Katarzyna', 'Dąbrowska', 'kasiaD', SHA2('hasloKasia2024', 256)),
+('Marek', 'Jankowski', 'marekJ', SHA2('Marek123!', 256)),
+('Magdalena', 'Zielińska', 'magdaZ', SHA2('magdaSuperHaslo', 256)),
+('Tomasz', 'Lewandowski', 'tomekL', SHA2('tomekBezpieczne', 256));
