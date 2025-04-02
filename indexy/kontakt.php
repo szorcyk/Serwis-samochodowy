@@ -151,7 +151,7 @@
                 ?>
                 <table>
                 <tr>
-                    <th>ID</th>
+                    
                     <th>Data</th>
                     <th>Godzina</th>
                 </tr>
@@ -159,7 +159,7 @@
                 $result = $db_lnk->query($sql);
                 while ($row = $result->fetch_assoc()): ?>
                     <tr>
-                        <td><?php echo $row['id']; ?></td>
+                        
                         <td><?php echo $row['data']; ?></td>
                         <td><?php echo $row['czas']; ?></td>
                     </tr>
